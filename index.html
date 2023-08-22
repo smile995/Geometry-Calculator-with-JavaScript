@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Area Calculator</title>
+    <!-- daisyUI and tailwind cdn link below -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="bg-cyan-600 py-5 text-center ">
+        <h1 class="text-4xl font-bold text-white">Geometry Area <span class="text-yellow-400">Calculator</span></h1>
+    </header>
+    <main class=" w-11/12 mx-auto my-5">
+        <section>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- triangle -->
+                <div class="card bg-base-100 shadow-xl hover:bg-gray-100">
+                    <figure class="pt-5"><img src="./images/triangle.png" alt="Shoes" /></figure>
+                    <div class="card-body  ">
+                        <h2 class="card-title flex justify-center ">Triangle</h2>
+                        <p class="font-semibold text-center">Formula: 0.5 X Base X Height</p>
+                        <div class="text-center">
+                            <p>
+                                <input placeholder="Base" type="text" name="" id="triangleBase"
+                                    class="bg-slate-300 px-4 rounded border-none text-lg w-24">
+                                <span class="ml-2">cm</span>
+                                <input placeholder="Height" type="text" name="" id="triangleHeight"
+                                    class="bg-slate-300 px-4 mt-2 lg:mt-0 md:mt-0  rounded border-none text-lg w-24">
+                                <span class="ml-2">cm</span>
+                            </p>
+                            <h1>Area =   <span id="triangleArea">00</span> cm <sup>2</sup></h1>
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn  btn-primary w-full " onclick="calculateTriangleArea()">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rectangle -->
+                <div class="card bg-base-100 shadow-xl hover:bg-gray-100">
+                    <figure class="pt-5"><img src="./images/rectangle.png" alt="Shoes" /></figure>
+                    <div class="card-body  ">
+                        <h2 class="card-title flex justify-center ">Rectangle</h2>
+                        <p class="font-semibold text-center">Formula: Base X Height</p>
+                        <div class="text-center">
+                            <p>
+                                <input placeholder="width" type="text" name="" id="RectangleBase"
+                                    class="bg-slate-300 px-4 rounded border-none text-lg w-24">
+                                <span class="ml-2">cm</span>
+                                <input placeholder="Height" type="text" name="" id="RectangleHeight"
+                                    class="bg-slate-300 px-4 mt-2 lg:mt-0 md:mt-0  rounded border-none text-lg w-24">
+                                <span class="ml-2">cm</span>
+                            </p>
+                            <h1>Area =   <span id="RectangleArea">00</span> cm <sup>2</sup></h1>
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn  btn-primary w-full " onclick="calculateRectangleArea()">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Parallelogram -->
+                <div class="card bg-base-100 shadow-xl hover:bg-gray-100">
+                    <figure class="pt-5"><img src="./images/Parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body  ">
+                        <h2 class="card-title flex justify-center ">Parallelogram</h2>
+                        <p class="font-semibold text-center">Formula: Base X Height</p>
+                        <div class="text-center">
+                            <p>
+                                <input placeholder="Base" type="text" name="" id="ParallelogramBase"
+                                    class="bg-slate-300 px-4 rounded border-none text-lg w-24">
+                                <span class="ml-2">cm</span>
+                                <input placeholder="Height" type="text" name="" id="ParallelogramHeight"
+                                    class="bg-slate-300 px-4 mt-2 lg:mt-0 md:mt-0  rounded border-none text-lg w-24">
+                                <span class="ml-2">cm</span>
+                            </p>
+                            <h1>Area =   <span id="ParallelogramArea">00</span> cm <sup>2</sup></h1>
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn  btn-primary w-full " onclick="calculateParallelogramArea()">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- all javaScript source file here -->
+    <script src="./index.js"></script>
+</body>
+
+</html>
