@@ -6,6 +6,7 @@ function findvalue(feildId){
  const value=parseFloat(valueText)
  return value;
 }
+
 function calculateTriangleArea() {
     
     const Base=findvalue('triangleBase');
