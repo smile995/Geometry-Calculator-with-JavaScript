@@ -47,7 +47,7 @@
                         <p class="font-semibold text-center">Formula: Base X Height</p>
                         <div class="text-center">
                             <p>
-                                <input placeholder="width" type="text" name="" id="RectangleBase"
+                                <input placeholder="Width" type="text" name="" id="RectangleBase"
                                     class="bg-slate-300 px-4 rounded border-none text-lg w-24">
                                 <span class="ml-2">cm</span>
                                 <input placeholder="Height" type="text" name="" id="RectangleHeight"
@@ -102,6 +102,28 @@
                         </div>
                         <div class="card-actions ">
                             <button class="btn  btn-primary w-full " onclick="calculateRhombusArea()">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pentagon -->
+                <div class="card bg-base-100 shadow-xl hover:bg-gray-100">
+                    <figure class="pt-5"><img src="./images/Pentagon.png" alt="Shoes" /></figure>
+                    <div class="card-body  ">
+                        <h2 class="card-title flex justify-center ">Pentagon</h2>
+                        <p class="font-semibold text-center">Formula: 0.5 X Perimeter X Apothem</p>
+                        <div class="text-center">
+                            <p> 
+                                <input placeholder="Perimeter" type="text" name="" id="Perimeter"
+                                    class="bg-slate-300 px-4 rounded border-none text-lg w-24">
+                                <span class="ml-2">cm</span>
+                                <input placeholder="Apothem" type="text" name="" id="Apothem"
+                                    class="bg-slate-300 px-4 mt-2 lg:mt-0 md:mt-0  rounded border-none text-lg w-24">
+                                <span class="ml-2">cm</span>
+                            </p>
+                            <h1>Area =   <span id="PentagonArea">00</span> cm <sup>2</sup></h1>
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn  btn-primary w-full " onclick="calculatePentagonArea()">Calculate</button>
                         </div>
                     </div>
                 </div>

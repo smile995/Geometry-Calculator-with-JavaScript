@@ -39,3 +39,10 @@ function calculateRhombusArea(){
     const areaText=document.getElementById('RhombusArea');
     areaText.innerText=area;
 }
+function calculatePentagonArea(){
+    const Perimeter=findvalue('Perimeter');
+    const Apothem=findvalue('Apothem');
+    const area=0.5*Perimeter*Apothem;
+    const areaText=document.getElementById('PentagonArea');
+    areaText.innerText=area;
+}
