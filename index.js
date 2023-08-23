@@ -31,3 +31,11 @@ function calculateParallelogramArea(){
     const areaText=document.getElementById('ParallelogramArea')
     areaText.innerText=area;
 }
+
+function calculateRhombusArea(){
+    const diagonal_1= findvalue('RhombusD-1');
+    const diagonal_2=findvalue('RhombusD_2');
+    const area=0.5*diagonal_1*diagonal_2;
+    const areaText=document.getElementById('RhombusArea');
+    areaText.innerText=area;
+}
