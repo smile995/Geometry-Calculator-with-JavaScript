@@ -12,7 +12,7 @@ function calculateTriangleArea() {
     const Base=findvalue('triangleBase');
     const Height=findvalue('triangleHeight');
     const area=0.5*Base*Height;
-    console.log(area);
+    // console.log(area);
     const area_feild=document.getElementById('triangleArea');
     area_feild.innerText=area;
    
